@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css?family=Tillana:700");
+@import url("https://fonts.googleapis.com/css?family=Walter+Turncoat:400");
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "Tillana", sans-serif;
+}
+
+body {
+	/*background: #D5EFF2;*/
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ddf1f9+6,a0d8ef+100 */
+	background: rgb(221,241,249); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(221,241,249,1) 6%, rgba(160,216,239,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(221,241,249,1) 6%,rgba(160,216,239,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(221,241,249,1) 6%,rgba(160,216,239,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ddf1f9', endColorstr='#a0d8ef',GradientType=0 ); /* IE6-9 */
+
+	color: #805711;
+	font-size: 26px;
+	z-index: -1;
+}
+
+.body-overlay {
+	position: fixed;
+	z-index: 0;
+	background-image: url("../img/bg.png");
+	background-size: 100% auto;
+	background-repeat: repeat-y;
+	background-color: rgba(0, 0, 0, 0);
+	min-width: 100%;
+	min-height: 100%;
+}
+
+
+p {
+	font-weight: 700;
+	/* border-style: dotted;
+	border-width: 2px 0 2px 0;
+	padding: 5px 0 5px 0; */
+}
+
+small {
+	font-size: 0.5em;
+}
+
+a, a:active, a:hover, a:visited {
+	font-family: "Walter Turncoat", sans-serif;
+	color: #A6632D;
+	font-size: 1.1em;
+	font-weight: 400;
+	padding: 0 0 0 3px;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 #000000;
+}
+
+a.animal, a.name {
+	font-size: 1.2em;
+}
+
+.btn {
+	border: 3px solid #805711;
+	font-family: inherit;
+	font-size: 0.75em;
+	color: #805711;
+	background: none;
+	cursor: pointer;
+	padding: 10px;
+	display: inline-block;
+	margin: 10px 10px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+	color: #FFFFFF;
+	background: #805711;
+}
+
+.btn-minor {
+	font-size: 0.5em;
+}
+
+.page-container {
+	position: relative;
+	text-align: center;
+	vertical-align: center;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.page-child {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.byline {
+	font-size: 0.5em;
+	position: fixed;
+	top: 95%;
+	right: 2%;
+	width: auto;
+	height: 10%;
+}
+
+.debug {
+	font-family: monospace;
+	font-size: 0.5em;
+	position: fixed;
+	top: 95%;
+	left: 2%;
+	width: auto;
+	height: 10%;
+}
